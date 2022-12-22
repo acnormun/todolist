@@ -1,3 +1,4 @@
+import { FooterComponent } from './footer/footer.component';
 import { TodoeditComponent } from './todo/todoedit/todoedit.component';
 import { TodolistComponent } from './todo/todolist/todolist.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,7 +9,8 @@ const routes: Routes = [
   {path: '', redirectTo: 'todolist', pathMatch:'full'},
   {path: "header", component: HeaderComponent},
   {path: "todolist", component: TodolistComponent},
-  {path: "todoedit", component: TodoeditComponent}
+  {path: "todoedit", component: TodoeditComponent},
+  {path: "footer", component: FooterComponent}
 ];
 
 @NgModule({

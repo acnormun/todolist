@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFA220;
+}
+
+.copy{
+    padding-left: 1rem;
+}
