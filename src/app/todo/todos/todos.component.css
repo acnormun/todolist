@@ -1,6 +1,7 @@
 .acoes {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    background-color: #F8F9FE;
   }
   
   .botao-excluir {
@@ -17,48 +18,44 @@
     margin-top: 10px;
   }
   
-  .pensamento {
+  .model {
     background-color: #F8F9FE;
     padding: 1rem;
     box-sizing: border-box;
   }
   
-  .pensamento .conteudo {
+  .model .content {
     margin: 1rem auto;
     word-wrap: break-word;
   }
   
-  .pensamento .autoria {
-    word-wrap: break-word;
-  }
-  
   .modelo1 {
-    box-shadow: 8px 8px 0px #154580;
+    box-shadow: 8px 8px 0px #F44336;
   }
   
   .modelo2 {
-    box-shadow: 8px 8px 0px #6BD1FF;
+    box-shadow: 8px 8px 0px #FFD54F;
   }
   
   .modelo3 {
     box-shadow: 8px 8px 0px #84EEC1;
   }
   
-  .pensamento-g {
+  .todo-g {
     width: 556px;
   }
   
-  .pensamento-p {
+  .todo-p {
     width: 262px;
   }
   
   @media screen and (max-width: 768px) {
-    .pensamento-g {
+    .todo-g {
       width: 100%;
     }
   }
   @media screen and (max-width: 426px) {
-    .pensamento-p {
+    .todo-p {
       width: 100%;
     }
   }

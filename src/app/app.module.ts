@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TodosComponent } from './todo/todos/todos.component';
 import { FooterComponent } from './footer/footer.component';
+import { TodocreateComponent } from './todo/todocreate/todocreate.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     TodolistComponent,
     TodoeditComponent,
     TodosComponent,
-    FooterComponent
+    FooterComponent,
+    TodocreateComponent
   ],
   imports: [
     BrowserModule,

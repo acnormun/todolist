@@ -1,3 +1,4 @@
+import { TodocreateComponent } from './todo/todocreate/todocreate.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodoeditComponent } from './todo/todoedit/todoedit.component';
 import { TodolistComponent } from './todo/todolist/todolist.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path: "header", component: HeaderComponent},
   {path: "todolist", component: TodolistComponent},
   {path: "todoedit", component: TodoeditComponent},
+  {path: 'todocreate', component: TodocreateComponent},
   {path: "footer", component: FooterComponent}
 ];
 

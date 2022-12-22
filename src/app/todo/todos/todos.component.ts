@@ -15,7 +15,7 @@ export class TodosComponent {
   }
 
   widthTodo():string{
-    if(this.todo.conteudo.length >= 256){
+    if(this.todo.conteudo.length >= 100){
       return 'todo-g'
     }else{
       return 'todo-p'

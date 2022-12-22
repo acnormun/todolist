@@ -1,0 +1,85 @@
+<section class="container">
+
+    <header> Nova Atividade</header>
+    <form class="forms">
+        <label for="atividade"> Atividade: </label>
+        <input 
+            type="text"
+            class="input"
+            id="todo"
+            name="todo"
+            placeholder="Digite sua atividade aqui..."
+            [(ngModel)]="todo.conteudo"
+        >
+
+        <label for="modelo">Selecione o modelo do card:</label>
+        <div class="models">
+            <div class="container-radio">
+                <div class="radio-modelo">
+                    <label for="modelo1">
+                        <input 
+                        type="radio"
+                        id="modelo1"
+                        value="modelo1"
+                        name="modelo-card"
+                        [(ngModel)]="todo.modelo"
+                        >
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <span>Modelo 1</span>
+                    </label>
+                    <div class="modelo modelo1 ff-roboto-mono" >
+                        <img src="../../../../assets/img/modelo1.svg" alt="Aspas azuis" width="35">
+                        <p class="conteudo" >{{todo.conteudo}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-radio">
+                <div class="radio-modelo">
+                    <label for="modelo2">
+                        <input 
+                        type="radio"
+                        id="modelo2"
+                        value="modelo2"
+                        name="modelo-card"
+                        [(ngModel)]="todo.modelo"
+                        >
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <span>Modelo 2</span>
+                    </label>
+                    <div class="modelo modelo2 ff-roboto-mono" >
+                        <img src="../../../../assets/img/modelo2.svg" alt="Aspas azuis" width="35">
+                        <p class="conteudo" >{{todo.conteudo}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-radio">
+                <div class="radio-modelo">
+                    <label for="modelo1">
+                        <input 
+                        type="radio"
+                        id="modelo1"
+                        value="modelo1"
+                        name="modelo-card"
+                        [(ngModel)]="todo.modelo"
+                        >
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <span>Modelo 1</span>
+                    </label>
+                    <div class="modelo modelo1 ff-roboto-mono" >
+                        <img src="../../../../assets/img/modelo1.svg" alt="Aspas azuis" width="35">
+                        <p class="conteudo" >{{todo.conteudo}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</section>

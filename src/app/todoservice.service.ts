@@ -16,6 +16,10 @@ export class TodoserviceService {
     return this.http.get<Todo[]>(this.API);
   }
 
+  create(todo:Todo): Observable<Todo>{
+    return this.http.post<Todo>(this.API, todo);
+  }
+
 
 
 
