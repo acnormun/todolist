@@ -1,0 +1,13 @@
+<div class="pensamento {{todo.modelo}} ff-roboto-mono [[ngClass]='widthTodo()'">
+    <img src="../../../../assets/img/{{todo.modelo}}.png" alt="aspas coloridas">
+    <p class="conteudo">{{todo.conteudo}}</p>
+    <div class="acoes">
+        <button class="botao-editar" routerLink="/pensamento/editar-pensamento/{{todo.id}}">
+            <img src="../../../assets/img/icone-editar.png" alt="ícone editar">
+        </button>
+        <button class="botao-excluir" routerLink="/pensamento/excluir-pensamento/{{todo.id}}">
+            <img src="../../../assets/img/icone-excluir.png" alt="ícone excluir">
+        </button>
+    </div>
+</div>
+

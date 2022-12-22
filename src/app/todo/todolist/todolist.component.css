@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../assets/bg/Yellowyellowbg.svg');
+    background-repeat: repeat;
+}
+
+.button{
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: #FFA220;
+    border: none;
+    font-weight: 700;
+}
+
+.list{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.todos{
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
