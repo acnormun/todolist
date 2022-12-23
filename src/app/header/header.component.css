@@ -4,12 +4,13 @@
     background-color: #ffa220;
     justify-content: space-between;
     align-items: center;
+    height: 15vh;
 
 }
 
 .home__logo{
     padding-left: 2rem;
-    width: 50px;
+    width: 5vh;
 }
 
 .home__title{
@@ -17,20 +18,22 @@
 }
 
 .head__img{
-    width: 25rem;
+    width: 32vh;
 }
 
 @media only screen and (max-width: 600px){
+    .head{
+        width: 75vh;
+    }
     .head__img{
-        width: 9rem;
+        width: 40%;
     }
 
     .home__title{
         font-size: small;
     }
 
-    .home.logo{
-        width: 20px;
-        height: 20px;
+    .home__logo{
+        width: 10%;
     }
 }

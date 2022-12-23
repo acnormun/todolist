@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #FFA220;
+    height: 5vh;
+    align-items: center;
 }
 
 .footer a{
@@ -11,4 +13,12 @@
 }
 .copy{
     padding-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        width: 75vh;
+        height: 4vh;
+    }
+    
 }

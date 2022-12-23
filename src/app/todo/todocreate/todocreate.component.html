@@ -1,6 +1,8 @@
 <section class="container">
 
-    <header> Nova Atividade</header>
+    <header> 
+        <h2 class="title">Nova Atividade</h2>
+    </header>
     <form class="forms">
         <label for="atividade"> Atividade: </label>
         <input 
@@ -12,7 +14,7 @@
             [(ngModel)]="todo.conteudo"
         >
 
-        <label for="modelo">Selecione o modelo do card:</label>
+        <label for="models">Selecione o grau de urgência:</label>
         <div class="models">
             <div class="container-radio">
                 <div class="radio-modelo">
@@ -27,11 +29,11 @@
                         <div class="custom-radio">
                             <span></span>
                         </div>
-                        <span>Modelo 1</span>
+                        <span>Urgente</span>
                     </label>
-                    <div class="modelo modelo1 ff-roboto-mono" >
+                    <div class="card modelo1 ff-roboto-mono" >
                         <img src="../../../../assets/img/modelo1.svg" alt="Aspas azuis" width="35">
-                        <p class="conteudo" >{{todo.conteudo}}</p>
+                        <p class="content" >{{todo.conteudo}}</p>
                     </div>
                 </div>
             </div>
@@ -49,37 +51,42 @@
                         <div class="custom-radio">
                             <span></span>
                         </div>
-                        <span>Modelo 2</span>
+                        <span>Prioridade</span>
                     </label>
-                    <div class="modelo modelo2 ff-roboto-mono" >
+                    <div class="card modelo2 ff-roboto-mono" >
                         <img src="../../../../assets/img/modelo2.svg" alt="Aspas azuis" width="35">
-                        <p class="conteudo" >{{todo.conteudo}}</p>
+                        <p class="content" >{{todo.conteudo}}</p>
                     </div>
                 </div>
             </div>
 
             <div class="container-radio">
                 <div class="radio-modelo">
-                    <label for="modelo1">
+                    <label for="modelo3">
                         <input 
                         type="radio"
-                        id="modelo1"
-                        value="modelo1"
+                        id="modelo3"
+                        value="modelo3"
                         name="modelo-card"
                         [(ngModel)]="todo.modelo"
                         >
                         <div class="custom-radio">
                             <span></span>
                         </div>
-                        <span>Modelo 1</span>
+                        <span>Tranquilo</span>
                     </label>
-                    <div class="modelo modelo1 ff-roboto-mono" >
-                        <img src="../../../../assets/img/modelo1.svg" alt="Aspas azuis" width="35">
-                        <p class="conteudo" >{{todo.conteudo}}</p>
+                    <div class="card modelo3 ff-roboto-mono" >
+                        <img src="../../../../assets/img/modelo3.svg" alt="Aspas azuis" width="35">
+                        <p class="content" >{{todo.conteudo}}</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="acoes">
+            <button class="button" (click)="createTodo()">Salvar</button>
+            <button class="button" (click)="cancel()">Cancelar</button>
+        </div>
+
     </form>
 
 </section>

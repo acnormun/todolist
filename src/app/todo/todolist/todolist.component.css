@@ -2,18 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
     background-image: url('../../../assets/bg/Yellowyellowbg.svg');
     background-repeat: repeat;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 15rem;
 }
 
 .button{
-    margin-top: 50px;
+    margin-top: 0;
     width: 200px;
     height: 100px;
     background-color: #FFA220;
     border: none;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .list{
@@ -27,6 +31,9 @@
 }
 
 @media only screen and (max-width: 600px){
+    .container{
+        width: 75vh;
+    }
     .list{
         display: flex;
         flex-direction: column;
