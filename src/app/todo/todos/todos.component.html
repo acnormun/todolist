@@ -2,7 +2,7 @@
     <img src="../../../../assets/img/{{todo.modelo}}.svg" alt="icon" width="35">
     <p class="content">{{todo.conteudo}}</p>
     <div class="acoes">
-        <button class="botao-editar" >
+        <button class="botao-editar" routerLink="/todos/todoedit/{{todo.id}}">
             <img src="../../../assets/img/icone-editar.svg" alt="ícone editar" width="25">
         </button>
         <button class="botao-excluir" routerLink="/todos/tododelete/{{todo.id}}">

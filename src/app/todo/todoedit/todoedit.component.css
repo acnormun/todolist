@@ -1,0 +1,140 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../assets/bg/Yellowyellowbg.svg');
+    width: 100%;
+    height: 80vh;
+
+}
+
+.title{
+  margin: 1rem;
+}
+
+.button{
+  width: 15rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #FFA220;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.acoes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.input{
+    border: none;
+    height: 40px;
+    padding-left: 1rem;
+
+}
+
+.models{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+  .content {
+    margin: 1rem auto;
+    word-wrap: break-word;
+  }
+
+  .card{
+    background-color: #F8F9FE;
+    padding: 2rem;
+    margin: 2rem;
+    max-width:400px;
+    word-wrap: break-word;
+  }
+  
+  .radio {
+    margin: 0;
+  }
+  
+  .modelo1 {
+    box-shadow: 8px 8px 0px #F44336;
+  }
+  
+  .modelo2 {
+    box-shadow: 8px 8px 0px #FFD54D;
+  }
+  
+  .modelo3 {
+    box-shadow: 8px 8px 0px #84EEC1;
+  }
+  
+  input[type='radio'] {
+    display: none;
+  }
+  
+  .radio-modelo label {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  
+  .custom-radio {
+    border: 1px solid #154580;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+  }
+  
+  .custom-radio,
+  span {
+    transition: 0.5s ease;
+    color: #154580;
+  }
+  
+  .custom-radio span {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border-radius: 50%;
+  }
+  
+  input[type='radio']:checked+.custom-radio {
+    border-color: #154580;
+  }
+  
+  input[type='radio']:checked+.custom-radio span {
+    background: #154580;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .container{
+      width: 75vh;
+    }
+
+    .models{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 75vh;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
