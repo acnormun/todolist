@@ -20,6 +20,23 @@ export class TodoserviceService {
     return this.http.post<Todo>(this.API, todo);
   }
 
+  search(id: number): Observable<Todo>{
+    const url = `${this.API}/${id}`;
+    return this.http.get<Todo>(url);
+  }
+
+  delete(id: number): Observable<Todo>{
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Todo>(url);
+  }
+
+  edit(todo: Todo): Observable<Todo>{
+    const url = `${this.API}/${todo.id}`;
+    return this.http.put<Todo>(url, todo);
+  }
+
+  
+
 
 
 

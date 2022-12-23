@@ -28,6 +28,7 @@
 
 .todos{
     padding: 2rem;
+    max-width: 25rem;
 }
 
 @media only screen and (max-width: 600px){

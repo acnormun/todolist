@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TodosComponent } from './todo/todos/todos.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodocreateComponent } from './todo/todocreate/todocreate.component';
+import { TododeleteComponent } from './todo/tododelete/tododelete.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TodocreateComponent } from './todo/todocreate/todocreate.component';
     TodoeditComponent,
     TodosComponent,
     FooterComponent,
-    TodocreateComponent
+    TodocreateComponent,
+    TododeleteComponent,
   ],
   imports: [
     BrowserModule,
