@@ -5,9 +5,9 @@
     justify-content: baseline;
     background-image: url('../../../assets/bg/Yellowyellowbg.svg');
     background-repeat: repeat;
-    height: 53vh;
+    height: 100%;
     padding-top: 2rem;
-    padding-bottom: 15rem;
+    padding-bottom: 41rem;
 }
 
 .button{
